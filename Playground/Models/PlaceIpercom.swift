@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct PlaceIpercom: IPlace {
+struct PlaceIpercom: IPlace, IPlaceWithMissedCalls {
     let model: String
+    var getMissedCalls: ((([MissedCall]) -> Void) -> Void)?    
 }

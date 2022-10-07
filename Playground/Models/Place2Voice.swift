@@ -9,5 +9,5 @@ import Foundation
 
 struct Place2Voice: IPlace, IPlaceWithMissedCalls {
     let model: String
-    var getMissedCalls: (() -> Void)?
+    var getMissedCalls: ((([MissedCall]) -> Void) -> Void)?
 }

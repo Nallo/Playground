@@ -34,15 +34,16 @@ class ViewController: UIViewController {
 
         placeService.loadPlaces { places in
             self.places = places
-            print(places)
         }
     }
 
     @objc func requestMissedCalls() {
-        print(Date(), #function)
+        print("Loading missed calls...")
 
         places.compactMap({ $0 as? IPlaceWithMissedCalls }).forEach {
-            $0.getMissedCalls?()
+            $0.getMissedCalls? { missedCalls in
+                print(missedCalls)
+            }
         }
     }
 }
