@@ -38,8 +38,11 @@ class ViewController: UIViewController {
     }
 
     @objc func requestMissedCalls() {
-        places.compactMap({ $0 as? IPlaceWithMissedCalls }).forEach {
-            $0.getMissedCalls? { _ in }
+        places.compactMap({ $0 as? IPlaceWithMissedCalls }).forEach { place in
+            print("Requesting missedCalls for \(place)")
+            place.getMissedCalls? { missedCalls in
+                print("Requesting missedCalls for \(place) done with \(missedCalls)")
+            }
         }
     }
 }

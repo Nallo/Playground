@@ -9,13 +9,9 @@ import Foundation
 
 final class MissedCallsService2Voice: IMissedCallsService {
 
-    func load(for place: IPlace, completion: ([MissedCall]) -> Void) {
-        print("loading for \(place.model) - 2Voice")
-
+    func load(for place: IPlace, completion: Completion) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            print("loading for \(place.model) - 2Voice done")
-            /* Uncomment the line below to get the error */
-//            completion([])
+            completion?([MissedCall(date: "2voice")])
         }
     }
 

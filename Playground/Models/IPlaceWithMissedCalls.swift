@@ -8,5 +8,5 @@
 import Foundation
 
 protocol IPlaceWithMissedCalls {
-    var getMissedCalls: ((([MissedCall]) -> Void) -> Void)? { get set }
+    var getMissedCalls: ((IMissedCallsService.Completion) -> Void)? { get set }
 }

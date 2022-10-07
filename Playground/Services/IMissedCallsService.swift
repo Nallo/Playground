@@ -8,5 +8,7 @@
 import Foundation
 
 protocol IMissedCallsService {
-    func load(for place: IPlace, completion: ([MissedCall]) -> Void)
+    typealias Completion = (([MissedCall]) -> Void)?
+
+    func load(for place: IPlace, completion: Completion)
 }
