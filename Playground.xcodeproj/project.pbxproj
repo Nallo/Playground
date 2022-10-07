@@ -19,6 +19,10 @@
 		44C75B8328F02EA700910430 /* PlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B8228F02EA700910430 /* PlaceService.swift */; };
 		44C75B8528F0309900910430 /* IPlaceWithMissedCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B8428F0309900910430 /* IPlaceWithMissedCalls.swift */; };
 		44C75B8728F030EB00910430 /* MissedCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B8628F030EB00910430 /* MissedCall.swift */; };
+		44C75B8928F0470E00910430 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B8828F0470E00910430 /* FirstScreen.swift */; };
+		44C75B8B28F04DA200910430 /* IMissedCallsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B8A28F04DA200910430 /* IMissedCallsService.swift */; };
+		44C75B8D28F04DB400910430 /* MissedCallsService2Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B8C28F04DB400910430 /* MissedCallsService2Voice.swift */; };
+		44C75B8F28F04DC500910430 /* MissedCallsServiceIpercom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B8E28F04DC500910430 /* MissedCallsServiceIpercom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		44C75B8228F02EA700910430 /* PlaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceService.swift; sourceTree = "<group>"; };
 		44C75B8428F0309900910430 /* IPlaceWithMissedCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPlaceWithMissedCalls.swift; sourceTree = "<group>"; };
 		44C75B8628F030EB00910430 /* MissedCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissedCall.swift; sourceTree = "<group>"; };
+		44C75B8828F0470E00910430 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		44C75B8A28F04DA200910430 /* IMissedCallsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMissedCallsService.swift; sourceTree = "<group>"; };
+		44C75B8C28F04DB400910430 /* MissedCallsService2Voice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissedCallsService2Voice.swift; sourceTree = "<group>"; };
+		44C75B8E28F04DC500910430 /* MissedCallsServiceIpercom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissedCallsServiceIpercom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 				44C75B6E28F0287900910430 /* LaunchScreen.storyboard */,
 				44C75B7A28F02B3200910430 /* Models */,
 				44C75B8128F02E9800910430 /* Services */,
+				44C75B8828F0470E00910430 /* FirstScreen.swift */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -105,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				44C75B8228F02EA700910430 /* PlaceService.swift */,
+				44C75B8A28F04DA200910430 /* IMissedCallsService.swift */,
+				44C75B8C28F04DB400910430 /* MissedCallsService2Voice.swift */,
+				44C75B8E28F04DC500910430 /* MissedCallsServiceIpercom.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -180,7 +192,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C75B8728F030EB00910430 /* MissedCall.swift in Sources */,
+				44C75B8928F0470E00910430 /* FirstScreen.swift in Sources */,
+				44C75B8B28F04DA200910430 /* IMissedCallsService.swift in Sources */,
 				44C75B6828F0287700910430 /* ViewController.swift in Sources */,
+				44C75B8F28F04DC500910430 /* MissedCallsServiceIpercom.swift in Sources */,
 				44C75B7E28F02BC800910430 /* PlaceIpercom.swift in Sources */,
 				44C75B6428F0287700910430 /* AppDelegate.swift in Sources */,
 				44C75B8328F02EA700910430 /* PlaceService.swift in Sources */,
@@ -188,6 +203,7 @@
 				44C75B7C28F02B4A00910430 /* IPlace.swift in Sources */,
 				44C75B6628F0287700910430 /* SceneDelegate.swift in Sources */,
 				44C75B8528F0309900910430 /* IPlaceWithMissedCalls.swift in Sources */,
+				44C75B8D28F04DB400910430 /* MissedCallsService2Voice.swift in Sources */,
 				44C75B8028F02BE600910430 /* Place2Voice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

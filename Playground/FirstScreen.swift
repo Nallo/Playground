@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstScreen.swift
 //  Playground
 //
 //  Created by Stefano Martinallo on 07/10/22.
@@ -7,23 +7,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    private let placeService = PlaceService()
-    private var places = [IPlace]()
+class FirstScreen: UIViewController {
 
     private lazy var button: UIButton = {
         let b = UIButton()
         b.translatesAutoresizingMaskIntoConstraints = false
-        b.setTitle("Get Missed Calls".uppercased(), for: .normal)
-        b.addTarget(self, action: #selector(requestMissedCalls), for: .touchUpInside)
+        b.setTitle("Next".uppercased(), for: .normal)
+        b.addTarget(self, action: #selector(presentNextVC), for: .touchUpInside)
         return b
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .systemMint
+        view.backgroundColor = .systemTeal
 
         view.addSubview(button)
         NSLayoutConstraint.activate([
@@ -31,16 +27,9 @@ class ViewController: UIViewController {
             button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             button.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
-
-        placeService.loadPlaces { places in
-            self.places = places
-        }
     }
 
-    @objc func requestMissedCalls() {
-        places.compactMap({ $0 as? IPlaceWithMissedCalls }).forEach {
-            $0.getMissedCalls? { _ in }
-        }
+    @objc func presentNextVC() {
+        show(ViewController(), sender: nil)
     }
 }
-
