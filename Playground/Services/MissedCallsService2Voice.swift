@@ -14,6 +14,8 @@ final class MissedCallsService2Voice: IMissedCallsService {
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             print("loading for \(place.model) - 2Voice done")
+            /* Uncomment the line below to get the error */
+//            completion([])
         }
     }
 
