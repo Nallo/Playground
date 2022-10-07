@@ -12,6 +12,11 @@
 		44C75B6828F0287700910430 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B6728F0287700910430 /* ViewController.swift */; };
 		44C75B6D28F0287900910430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C75B6C28F0287900910430 /* Assets.xcassets */; };
 		44C75B7028F0287900910430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C75B6E28F0287900910430 /* LaunchScreen.storyboard */; };
+		44C75B7928F029CE00910430 /* JsonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B7828F029CE00910430 /* JsonFactory.swift */; };
+		44C75B7C28F02B4A00910430 /* IPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B7B28F02B4A00910430 /* IPlace.swift */; };
+		44C75B7E28F02BC800910430 /* PlaceIpercom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B7D28F02BC800910430 /* PlaceIpercom.swift */; };
+		44C75B8028F02BE600910430 /* Place2Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B7F28F02BE600910430 /* Place2Voice.swift */; };
+		44C75B8328F02EA700910430 /* PlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C75B8228F02EA700910430 /* PlaceService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		44C75B6C28F0287900910430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44C75B6F28F0287900910430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44C75B7128F0287900910430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C75B7828F029CE00910430 /* JsonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFactory.swift; sourceTree = "<group>"; };
+		44C75B7B28F02B4A00910430 /* IPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPlace.swift; sourceTree = "<group>"; };
+		44C75B7D28F02BC800910430 /* PlaceIpercom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceIpercom.swift; sourceTree = "<group>"; };
+		44C75B7F28F02BE600910430 /* Place2Voice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place2Voice.swift; sourceTree = "<group>"; };
+		44C75B8228F02EA700910430 /* PlaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,43 @@
 		44C75B6228F0287700910430 /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				44C75B7128F0287900910430 /* Info.plist */,
 				44C75B6328F0287700910430 /* AppDelegate.swift */,
 				44C75B6528F0287700910430 /* SceneDelegate.swift */,
 				44C75B6728F0287700910430 /* ViewController.swift */,
 				44C75B6C28F0287900910430 /* Assets.xcassets */,
+				44C75B7728F029A600910430 /* Data */,
 				44C75B6E28F0287900910430 /* LaunchScreen.storyboard */,
-				44C75B7128F0287900910430 /* Info.plist */,
+				44C75B7A28F02B3200910430 /* Models */,
+				44C75B8128F02E9800910430 /* Services */,
 			);
 			path = Playground;
+			sourceTree = "<group>";
+		};
+		44C75B7728F029A600910430 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				44C75B7828F029CE00910430 /* JsonFactory.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		44C75B7A28F02B3200910430 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44C75B7B28F02B4A00910430 /* IPlace.swift */,
+				44C75B7F28F02BE600910430 /* Place2Voice.swift */,
+				44C75B7D28F02BC800910430 /* PlaceIpercom.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44C75B8128F02E9800910430 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44C75B8228F02EA700910430 /* PlaceService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +174,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C75B6828F0287700910430 /* ViewController.swift in Sources */,
+				44C75B7E28F02BC800910430 /* PlaceIpercom.swift in Sources */,
 				44C75B6428F0287700910430 /* AppDelegate.swift in Sources */,
+				44C75B8328F02EA700910430 /* PlaceService.swift in Sources */,
+				44C75B7928F029CE00910430 /* JsonFactory.swift in Sources */,
+				44C75B7C28F02B4A00910430 /* IPlace.swift in Sources */,
 				44C75B6628F0287700910430 /* SceneDelegate.swift in Sources */,
+				44C75B8028F02BE600910430 /* Place2Voice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
