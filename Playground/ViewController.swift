@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     private let placeService = PlaceService()
+    private var places = [IPlace]()
 
     private lazy var button: UIButton = {
         let b = UIButton()
@@ -32,12 +33,17 @@ class ViewController: UIViewController {
         ])
 
         placeService.loadPlaces { places in
+            self.places = places
             print(places)
         }
     }
 
     @objc func requestMissedCalls() {
-        print(#function)
+        print(Date(), #function)
+
+        places.compactMap({ $0 as? IPlaceWithMissedCalls }).forEach {
+            $0.getMissedCalls?()
+        }
     }
 }
 

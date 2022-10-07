@@ -29,7 +29,12 @@ final class PlaceService {
             if place.type == "ipercom" {
                 places.append(PlaceIpercom(model: place.model))
             } else if place.type == "2voice" {
-                places.append(Place2Voice(model: place.model))
+                var place = Place2Voice(model: place.model)
+                place.getMissedCalls = {
+                    let service = MissedCallsService2Voice()
+                    service.load(for: place, completion: { _ in print("completed 2voice") })
+                }
+                places.append(place)
             }
         }
 

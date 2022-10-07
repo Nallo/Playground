@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct Place2Voice: IPlace {
+struct Place2Voice: IPlace, IPlaceWithMissedCalls {
     let model: String
+    var getMissedCalls: (() -> Void)?
 }
